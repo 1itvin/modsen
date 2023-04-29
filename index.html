@@ -6,9 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css">
-    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>My Quiz</title>
 </head>
-<body>
-    
+
+<body id="my-element">
+    <div class="start_btn"> <button>Start Quiz</button></div>
+    <audio id="my-audio" src="music/1.beginning.mp3"></audio>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Quiz</span>
+        </div>
+
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span>  per each question.</div>
+            <div class="info">2. Once you select your answer, it can`t be undone.</div>
+            <div class="info">3. You can`t select any option once time goes off.</div>
+            <div class="info">4. You can`t exit from Quiz while you`re playing.</div>
+            <div class="info">5. You`ll get points on the basis of your correct answers.</div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Who Wants to be a Millionaire</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>???</span> -->
+            </div>
+            <!--  -->
+            <div class="multiple_answers"></div>
+            <!--  -->
+            <div class="option_list">
+                <!-- option 1 -->
+                <!-- option 2 -->
+                <!-- option 3 -->
+            </div>
+        </section>
+
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <!-- que №1 of 7 -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="complete_text">You`ve completed the Quiz!</div>
+        <div class="score_text">
+            <!-- ez win -->
+        </div>
+        <div class="buttons">
+            <!-- <button class="restart">Replay Quiz</button> -->
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>  
 </body>
 </html>
