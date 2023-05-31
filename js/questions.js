@@ -1,5 +1,4 @@
-//creating an array and passing the number, questions, options, and answers
-let questions = [
+const questions = [
     {
         number: 1,
         question: "How many planets are in the solar system?",
